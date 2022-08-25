@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Laporan</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" rel="stylesheet">
+  <link href="./assets/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="./assets/css/adminlte.min.css" rel="stylesheet">
+  <link href="./assets/summernote/summernote-bs4.min.css" rel="stylesheet">
+  <link href="./assets/daterangepicker/daterangepicker.css" rel="stylesheet">
+  <link href="./assets/icheck-bootstrap/icheck-bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+  <link href="./assets/select2/css/select2.min.css" rel="stylesheet">
+  <link href="./assets/select2-bootstrap4-theme/select2-bootstrap4.min.css" rel="stylesheet">
+
+</head>
+<body class="hold-transition layout-top-nav">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img alt="AdminLTE Logo" class="brand-image img-circle elevation-3" src="./assets/back.png" style="opacity: .8"><span class="brand-text font-weight-light">Kembali</span></a>
+      </div>
+    </nav>
+    <div class="content-wrapper">
+      <div class="content-header">
+        <div class="container">
+          <div class="row mb-2">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6"></div>
+          </div>
+        </div>
+      </div>
+      <section class="content">
+        <div class="content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card card-info card-outline">
+                  <div class="card-header">
+                    <h3 class="card-title">Project Report</h3>
+                  </div>
+                  <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                          <select class="select2" data-placeholder="To :" multiple="multiple" style="width: 100%;">
+                            <option>CTO</option>
+                            <option>HRD</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Project Name">
+                        </div>
+                        <div class="form-group">
+                          <select id="inputStatus" class="form-control custom-select">
+                            <option selected="" disabled="">Dev / Dept</option>
+                            <option>IT</option>
+                            <option>Multimedia</option>
+                            <option>Operational</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <input class="form-control" placeholder="Team Resouce:">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <input class="form-control" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                               <label>Reporting Priode</label>
+                              <div class="input-group date" data-target-input="nearest" id="reservationdate">
+                                <div class="input-group-prepend" data-target="#reservationdate" data-toggle="datetimepicker">
+                                  <div class="input-group-text navbar navbar-white text-white">
+                                    <i class="fa fa-calendar"></i>
+                                  </div><input class="form-control datetimepicker-input" data-target="#reservationdate" type="text">
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-6">
+                               <div class="form-group">
+                                <label>Start End Date</label>
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text navbar navbar-white text-white"><i class="far fa-calendar-alt"></i></span>
+                                </div><input class="form-control float-right" id="reservation" type="text">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                         <label>Project Description</label>
+                        <textarea id="compose-textarea" class="form-control" style="height: 300px">
+                          <h1><u>Berita</u></h1>
+                          <h4>Hari ini</h4>
+                          <p>Penggunaan teknologi oleh manusia dimulai dengan pengubahan sumber daya alam menjadi alat-alat sederhana. Penemuan prasejarah tentang kemampuan mengendalikan api telah menaikkan ketersediaan sumber-sumber pangan, sedangkan penciptaan roda telah membantu manusia dalam bepergian dan mengendalikan lingkungan mereka. Perkembangan teknologi terbaru, termasuk di antaranya mesin cetak, telepon, dan Internet, telah memperkecil hambatan fisik terhadap komunikasi dan memungkinkan manusia untuk berinteraksi secara bebas dalam skala global. Tetapi, tidak semua teknologi digunakan untuk tujuan damai. Pengembangan senjata penghancur yang semakin hebat telah berlangsung sepanjang sejarah dari pentungan sampai senjata nuklir.</p>
+                          <ul>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                            <li>List item four</li>
+                          </ul>
+                          <p>Approve</p>
+                          <p>Dogar</p>
+                        </textarea>
+                      </div>
+                      <div class="form-group">
+                        <div class="btn btn-primary btn-file">
+                          <i class="fas fa-paperclip"></i> Attachment
+                          <input type="file" name="attachment">
+                        </div>
+                        </div>
+                        <div class="float-right">
+                          <button type="submit" class="btn btn-primary"><i class="far fa-envelope"></i> Send</button>
+                        </div>
+                        <button type="reset" class="btn btn-primary"><i class="fas fa-times"></i> Cancel</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+  <aside class="control-sidebar control-sidebar-dark"></aside>
+  <script src="./assets/jquery/jquery.min.js"></script> 
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  <script src="./assets/summernote/summernote-bs4.min.js"></script> 
+  <script src="./assets/select2/js/select2.full.min.js"></script> 
+  <script src="./assets/moment/moment.min.js"></script> 
+  <script src="./assets/inputmask/jquery.inputmask.min.js"></script> 
+  <script src="./assets/daterangepicker/daterangepicker.js"></script> 
+  <script src="./assets/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="./assets/dist/js/adminlte.min.js"></script> 
+  <script>
+   $(function () {
+     //Add text editor
+     $('#compose-textarea').summernote()
+   })
+  </script> 
+  <script>
+   $(function () {
+     //Initialize Select2 Elements
+     $('.select2').select2()
+
+     //Initialize Select2 Elements
+     $('.select2bs4').select2({
+       theme: 'bootstrap4'
+     })
+
+     //Datemask dd/mm/yyyy
+     $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+     //Datemask2 mm/dd/yyyy
+     $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+     //Money Euro
+     $('[data-mask]').inputmask()
+
+     //Date picker
+     $('#reservationdate').datetimepicker({
+         format: 'L'
+     });
+
+     //Date and time picker
+     $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
+
+     //Date range picker
+     $('#reservation').daterangepicker()
+     //Date range picker with time picker
+     $('#reservationtime').daterangepicker({
+       timePicker: true,
+       timePickerIncrement: 30,
+       locale: {
+         format: 'MM/DD/YYYY hh:mm A'
+       }
+     })
+     //Date range as a button
+     $('#daterange-btn').daterangepicker(
+       {
+         ranges   : {
+           'Today'       : [moment(), moment()],
+           'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+           'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+           'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+           'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+         },
+         startDate: moment().subtract(29, 'days'),
+         endDate  : moment()
+       },
+       function (start, end) {
+         $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+       }
+     )
+
+     //Timepicker
+     $('#timepicker').datetimepicker({
+       format: 'LT'
+     })
+
+     //Bootstrap Duallistbox
+     $('.duallistbox').bootstrapDualListbox()
+
+     //Colorpicker
+     $('.my-colorpicker1').colorpicker()
+     //color picker with addon
+     $('.my-colorpicker2').colorpicker()
+
+     $('.my-colorpicker2').on('colorpickerChange', function(event) {
+       $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+     })
+
+     $("input[data-bootstrap-switch]").each(function(){
+       $(this).bootstrapSwitch('state', $(this).prop('checked'));
+     })
+
+   })
+   // BS-Stepper Init
+   document.addEventListener('DOMContentLoaded', function () {
+     window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+   })
+
+   // DropzoneJS Demo Code Start
+   Dropzone.autoDiscover = false
+
+   // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+   var previewNode = document.querySelector("#template")
+   previewNode.id = ""
+   var previewTemplate = previewNode.parentNode.innerHTML
+   previewNode.parentNode.removeChild(previewNode)
+
+   var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+     url: "/target-url", // Set the url
+     thumbnailWidth: 80,
+     thumbnailHeight: 80,
+     parallelUploads: 20,
+     previewTemplate: previewTemplate,
+     autoQueue: false, // Make sure the files aren't queued until manually added
+     previewsContainer: "#previews", // Define the container to display the previews
+     clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+   })
+
+   myDropzone.on("addedfile", function(file) {
+     // Hookup the start button
+     file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file) }
+   })
+
+   // Update the total progress bar
+   myDropzone.on("totaluploadprogress", function(progress) {
+     document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
+   })
+
+   myDropzone.on("sending", function(file) {
+     // Show the total progress bar when upload starts
+     document.querySelector("#total-progress").style.opacity = "1"
+     // And disable the start button
+     file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
+   })
+
+   // Hide the total progress bar when nothing's uploading anymore
+   myDropzone.on("queuecomplete", function(progress) {
+     document.querySelector("#total-progress").style.opacity = "0"
+   })
+
+   // Setup the buttons for all transfers
+   // The "add files" button doesn't need to be setup because the config
+   // `clickable` has already been specified.
+   document.querySelector("#actions .start").onclick = function() {
+     myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
+   }
+   document.querySelector("#actions .cancel").onclick = function() {
+     myDropzone.removeAllFiles(true)
+   }
+  </script>
+</body>
+</html>
